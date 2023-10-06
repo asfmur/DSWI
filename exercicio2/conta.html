@@ -44,115 +44,156 @@
                         <label for="repitasenha">Repita a Senha:</label>
                         <input type="password" id="repitaASenha" name="repitaASenha"><br>
                     </li>
+
                 </ul>
+
             </fieldset>
-        </form>
 
-        <fieldset>
-            <h2>Endereço</h2>
-            <ul>
+            <fieldset>
 
-                <li>
-                    <label for="logradouro">Logradouro:</label>
-                    <input type="text" id="logradouro" name="logradouro"><br>
-                </li>
+                <h2>Endereço</h2>
 
-                <li>
-                    <label for="complemento">Complemento:</label>
-                    <input type="text" id="complemento" name="complemento"><br>
+                <ul>
 
-                </li>
+                    <li>
+                        <label for="logradouro">Logradouro:</label>
+                        <input type="text" id="logradouro" name="logradouro"><br>
+                    </li>
+
+                    <li>
+                        <label for="complemento">Complemento:</label>
+                        <input type="text" id="complemento" name="complemento"><br>
+
+                    </li>
 
 
-                <li>
-                    <label for="cidade">Cidade:</label>
-                    <input type="text" id="cidade" name="cidade"><br>
+                    <li>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade"><br>
 
-                </li>
+                    </li>
 
-                <li>
-                    <label for="estado">Estado:</label>
+                    <li>
+                        <label for="estado">Estado:</label>
 
-                    <select name=“estado”>
+                        <select name=“estado”>
 
-                        <option value="selecioneUmEstado">Selecione um Estado</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PB">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                        <option value="DF">Distrito Federal</option>
-                </li>
-                </select><br>
-                <li>
-                    <label for="cep">CEP:</label>
-                    <input type="number" id="cep" name="cep"><br>
+                            <option value="selecioneUmEstado">Selecione um Estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PB">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="DF">Distrito Federal</option>
+                    </li>
 
-                </li>
-            </ul>
-        </fieldset>
+                    </select><br>
 
-        <fieldset>
-            <h2>Perfil</h2>
-            <ul>
-              
-                <li>
-                    <label for="foto">Foto:</label>
-                    <input type="file">
-                    <p>Tamanho máximo de 700k, JPG, GIF PNG.</p>
-                </li>
-              
-                <li>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome"><br>
-                </li>
+                    <li>
+                        <label for="cep">CEP:</label>
+                        <input type="number" id="cep" name="cep"><br>
 
-                <li> 
-                    <label for="site">Site:</label>
-                    <input type="url">
-                    <p>Tem um site ou um blog? Coloque o endereço aqui.</p>
-                </li>
+                    </li>
 
-                <li>
-                    <label for="biografia">Biografia:</label>
-                    <textarea name="biografia" id="biografia" cols="70" rows="10"></textarea>
-                </li>
+                </ul>
 
-                <li>
-                    <label for="genero">Gênero</label>
-                    <input type="radio" id="masculino" name="gênero" value="Masculino">
-                    <label for="masculino">Masculino</label>
-                    <input type="radio" id="feminino" name="gênero" value="Feminino">
-                    <label for="feminino">Feminino</label>
-                    <input type="radio" id="outro" name="gênero" value="Outro">
-                    <label for="outro">Outro</label><br>
-                </li>
-            </ul>
-        </fieldset>
+            </fieldset>
+
+            <fieldset>
+
+                <h2>Perfil</h2>
+
+                <ul>
+
+                    <li>
+                        <label for="foto">Foto:</label>
+                        <input type="file">
+                        <p>Tamanho máximo de 700k, JPG, GIF PNG.</p>
+                    </li>
+
+                    <li>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome"><br>
+                    </li>
+
+                    <li>
+                        <label for="site">Site:</label>
+                        <input type="url">
+                        <p>Tem um site ou um blog? Coloque o endereço aqui.</p>
+                    </li>
+
+                    <li>
+                        <label for="biografia">Biografia:</label>
+                        <textarea name="biografia" id="biografia" cols="70" rows="10"></textarea>
+                    </li>
+
+                    <li>
+                        <label for="genero">Gênero</label>
+                        <input type="radio" id="masculino" name="gênero" value="Masculino">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="feminino" name="gênero" value="Feminino">
+                        <label for="feminino">Feminino</label>
+                        <input type="radio" id="outro" name="gênero" value="Outro">
+                        <label for="outro">Outro</label><br>
+                    </li>
+
+                </ul>
+
+            </fieldset>
+
+            <fieldset>
+
+                <h2>E-mails</h2>
+
+                <ul>
+
+                    <li>
+                        <input type="checkbox" name="envioDeE-mailsMensagens" id="envioDeE-mailsMensagens">
+                        <label for="envioDeE-mailsMensagens">Tudo bem em enviar e-mails com mensagens de outros
+                            usuários.</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="envioDeE-mailsPromoçao" id="envioDeE-mailsPromoçao">
+                        <label for="envioDeE-mailsPromoçao">Tudo bem em enviar e-mails ocasionais com promoções sobre
+                            outros
+                            produtos.</label>
+                    </li>
+
+                </ul>
+
+            </fieldset>
+
+            <fieldset>
+
+                <input type="submit" name="criarConta" id="criarConta" value="Criar Conta">
+            </fieldset>
+
         </form>
 
     </main>
+
 </body>
 
 </html>
