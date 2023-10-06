@@ -18,30 +18,30 @@
                 <ul>
 
                     <li>
-                        <label for="nome">Nome</label>
+                        <label for="nome">Nome:</label>
                         <input type="text" id="nome" name="nome"><br>
                     </li>
 
                     <li>
-                        <label for="sobrenome">Sobrenome</label>
+                        <label for="sobrenome">Sobrenome:</label>
                         <input type="text" id="sobrenome" name="sobrenome"><br>
 
                     </li>
 
 
                     <li>
-                        <label for="e-mail">E-mail</label>
+                        <label for="e-mail">E-mail:</label>
                         <input type="email" id="e-mail" name="e-mail"><br>
                     </li>
 
                     <li>
-                        <label for="senha">Senha</label>
+                        <label for="senha">Senha:</label>
                         <input type="password" id="senha" name="senha"><br>
 
                     </li>
 
                     <li>
-                        <label for="repitasenha">Repita a Senha</label>
+                        <label for="repitasenha">Repita a Senha:</label>
                         <input type="password" id="repitaASenha" name="repitaASenha"><br>
                     </li>
                 </ul>
@@ -53,25 +53,25 @@
             <ul>
 
                 <li>
-                    <label for="logradouro">Logradouro</label>
+                    <label for="logradouro">Logradouro:</label>
                     <input type="text" id="logradouro" name="logradouro"><br>
                 </li>
 
                 <li>
-                    <label for="complemento">Complemento</label>
+                    <label for="complemento">Complemento:</label>
                     <input type="text" id="complemento" name="complemento"><br>
 
                 </li>
 
 
                 <li>
-                    <label for="cidade">Cidade</label>
+                    <label for="cidade">Cidade:</label>
                     <input type="text" id="cidade" name="cidade"><br>
 
                 </li>
 
                 <li>
-                    <label for="estado">Estado</label>
+                    <label for="estado">Estado:</label>
 
                     <select name=“estado”>
 
@@ -106,7 +106,7 @@
                 </li>
                 </select><br>
                 <li>
-                    <label for="cep">CEP</label>
+                    <label for="cep">CEP:</label>
                     <input type="number" id="cep" name="cep"><br>
 
                 </li>
@@ -115,6 +115,40 @@
 
         <fieldset>
             <h2>Perfil</h2>
+            <ul>
+              
+                <li>
+                    <label for="foto">Foto:</label>
+                    <input type="file">
+                    <p>Tamanho máximo de 700k, JPG, GIF PNG.</p>
+                </li>
+              
+                <li>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"><br>
+                </li>
+
+                <li> 
+                    <label for="site">Site:</label>
+                    <input type="url">
+                    <p>Tem um site ou um blog? Coloque o endereço aqui.</p>
+                </li>
+
+                <li>
+                    <label for="biografia">Biografia:</label>
+                    <textarea name="biografia" id="biografia" cols="70" rows="10"></textarea>
+                </li>
+
+                <li>
+                    <label for="genero">Gênero</label>
+                    <input type="radio" id="masculino" name="gênero" value="Masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="gênero" value="Feminino">
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" id="outro" name="gênero" value="Outro">
+                    <label for="outro">Outro</label><br>
+                </li>
+            </ul>
         </fieldset>
         </form>
 
