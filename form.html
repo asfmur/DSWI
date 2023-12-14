@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="icon" type="image/x-icon" href="imagens/saclogo.png">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        
+        <nav>
+            <div class="header">
+        <a href="index.html" class="logo"><img src="imagens/saclogo.png" alt="logo" > </a>
+                <div class="header-right">
+                  <a class="" href="index.html">Página Principal</a>
+                  <a class="active" href="form.html">Compartilhe suas experiências!</a>
+                </div>
+              </div>
+    </header>
+    <main>    
+        <div class="formularioContato">
+        
+            <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                <input type="hidden" name="access_key" value="2f0917ad-60ed-4f5d-919f-75112bb5ff8f" />
+                <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                <label>
+                    <span><i class="icon icon-user-1"></i> Nome e Sobrenome</span>
+                    <input type="text" name="nome" required=""pattern="[a-z ]{3,190}+[a-z]{3-190}" title="ex: John Doe">
+                </label>
+                
+                <label>
+                    <span><i class="icon icon-email"></i> E-mail</span>
+                    <input type="text" name="email" required="" class="fade_8S"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="ex: helloworld@true.com">
+                </label>
+                <label>
+                <span><i class="icon icon-user-1"></i>Estado</span>
+                        <select name="estado" required="">
+
+                            <option value="selecioneUmEstado">Selecione um Estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PB">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="DF">Distrito Federal</option>
+                        
+                  </select><br>
+                  </label>
+                <label>
+                    <span><i class="icon icon-flag"></i> Assunto</span>
+                    <input type="text" name="assunto" required="">
+                </label>
+                
+                <label>
+                    <span><i class="icon icon-flag"></i> Celular</span>
+                    <input type="text" name="phone" required="" pattern="[0-9]{11}" title="11 numeros">
+                </label>
+
+                <label>
+                    <span><i class="icon icon-comment"></i> Mande sua Mensagem</span>
+                     <textarea name="Descrição das experiências" cols="70" required=""></textarea> 
+                </label>
+                <p id="mensagem">Preencha o formulário e clique em Enviar</p>
+                <div class="mb-6">
+                    <button type="submit" class="btn-envia">
+                      Enviar
+                    </button>
+                  </div>
+                  <p class="text-base text-center text-gray-400" id="result"></p>
+            </form>
+        </div>
+</main>
+    <script src="./script.js"></script>
+</body>
+
